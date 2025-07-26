@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#grad {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(120deg, #153677, #014111)
+  }
+
+#todo {
+    width: 100%;
+    background-color: white;
+    max-width: 700px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+    box-shadow: black 0px 10px 20px
+}
+
+#todo h1 {
+    color: #050505;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 175px;
+}
+
+#todo h1 img {
+    margin-left: 15px;
+}
+
+#list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-left: px;
+    padding-right: px;
+}
+
+#inputbox {
+    width: 150%;
+    margin-right: 10px;
+    text-align: center;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#inputbutton {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px ;
+    background-color: #06641e;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#inputbutton:hover {
+    background-color: #014111;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #3f3f52;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+  
+.close:hover {
+    background-color: #0c2047;
+    color: white;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+  
+.addBtn:hover {
+    background-color: #bbb;
+    border-radius: 6px;
+}
+
+.header {
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+  
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#emoji {
+    size: 10px;
+}

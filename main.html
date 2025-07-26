@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="grad">
+        <div id="todo">
+            <h1 class="header">To Do List<img src="images/clipboard-emoji-797x1024-5j6xw01i.png" alt="Clipboard Emoji" height="40px"></h1>
+            <div id="list">
+                <input type="text" id="inputbox" placeholder="What do you need to do?">
+                <span onclick="newElement()" onkeyup="newElement()" class="addBtn" id="inputbutton">Add</span>
+            </div>
+            <br>
+            <ul id="items">
+            </ul>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
